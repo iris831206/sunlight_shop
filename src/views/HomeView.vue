@@ -157,7 +157,7 @@
           <p class="text-muted">立即訂閱，享有最新優惠情報！
           </p>
           <div class="input-group w-md-50 mt-md-0 mt-3">
-            <input v-model="form.user.email" type="text" class="form-control rounded-0" placeholder="請輸入您的Email" />
+            <input v-model="userEmail" type="text" class="form-control rounded-0" placeholder="請輸入您的Email" />
             <div class="input-group-append">
               <button @click="getMail" class="btn btn-dark rounded-0" type="button" id="search">
                 訂閱
@@ -202,15 +202,7 @@ export default {
   data () {
     return {
       isLoading: false,
-      form: {
-        user: {
-          name: '',
-          email: '',
-          tel: '',
-          address: ''
-        },
-        message: ''
-      }
+      userEmail: ''
     }
   },
   components: {
@@ -246,9 +238,6 @@ export default {
     }
   },
   mounted () {
-    document.getElementById('product-link').addEventListener('click', () => {
-      Swal.close()
-    })
   }
 }
 </script>
