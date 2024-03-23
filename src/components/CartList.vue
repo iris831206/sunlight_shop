@@ -142,7 +142,7 @@ export default {
       this.delCartModal.show()
     },
     goOrder () {
-      this.$router.push('cart')
+      this.$router.push({ path: '/cart' })
       this.cartList.hide()
     },
     getProducts () {

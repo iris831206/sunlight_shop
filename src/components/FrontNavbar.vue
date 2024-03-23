@@ -1,15 +1,15 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
-      <RouterLink to="/" class="navbar-brand">Sunlight</RouterLink>
+      <router-link to="/" class="navbar-brand">Sunlight</router-link>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <RouterLink to="/products" class="nav-link">產品</RouterLink>
-          <RouterLink to="/cart" class="nav-link">購物車</RouterLink>
+          <router-link to="/products" class="nav-link">產品</router-link>
+          <router-link to="/cart" class="nav-link">購物車</router-link>
           <!-- <RouterLink to="/blog" class="nav-link">貼文</RouterLink>
           <RouterLink to="/admin/products" class="nav-link">後台產品頁面</RouterLink> -->
 
@@ -34,9 +34,9 @@
     <div class="row justify-content-center my-auto">
       <div class="text-center">
         <h2 class="fw-bold">日安手作</h2>
-        <RouterLink to="/products" v-if="topIndex_show" class="btn btn-dark rounded-0 mt-2" z-index="1060">
+        <router-link to="/products" v-if="topIndex_show" class="btn btn-dark rounded-0 mt-2" z-index="1060">
           選購商品
-        </RouterLink>
+        </router-link>
       </div>
     </div>
   </div>
